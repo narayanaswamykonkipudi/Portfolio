@@ -44,7 +44,7 @@ export function Contact() {
   const socialLinks = [
     { icon: Github, href: "https://github.com/narayanaswamykonkipudi", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/narayana-swamy-konkipudi-28b065333/", label: "LinkedIn" },
-    { icon: Instagram, href: "https://instagram.com/narayanaswamy_k", label: "Instagram" },
+    { icon: Instagram, href: "https://instagram.com/nithin_konkipudi", label: "Instagram" },
   ];
 
   return (
@@ -90,10 +90,7 @@ export function Contact() {
                konkipudinarayanaswamy@gmail.com
               </a>
 
-            </div>
-
-
-
+              </div>
                 <div>
                   <p className="text-sm text-gray-400 mb-1">Location</p>
                   <p className="text-gray-300">Tuni, Andhra Pradesh, India</p>
