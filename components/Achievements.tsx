@@ -8,7 +8,7 @@ const achievements = [
   {
     icon: Code,
     title: "Coding Problems",
-    value: "181+",
+    value: "300+",
     description: "LeetCode, CodeChef, GFG, HackerRank",
     color: "text-blue-400",
     link: "https://codolio.com/profile/BuildWithNithin",
@@ -27,6 +27,7 @@ const achievements = [
     value: "#15,615",
     description: "C Score | 3 awards",
     color: "text-purple-400",
+    link: "https://codolio.com/profile/BuildWithNithin",
   },
   {
     icon: Star,
@@ -34,6 +35,7 @@ const achievements = [
     value: "3-Star",
     description: "C++, C, Python",
     color: "text-emerald-400",
+    link: "https://www.hackerrank.com/profile/konkipudinaraya1",
   },
 ];
 
@@ -116,12 +118,12 @@ export function Achievements() {
             <CardContent className="pt-6">
               <div className="flex items-center justify-center space-x-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-emerald-400">31+</div>
+                  <div className="text-3xl font-bold text-emerald-400">60+</div>
                   <div className="text-sm text-gray-400 mt-1">Active Days</div>
                 </div>
                 <div className="w-px h-12 bg-white/20"></div>
                 <div>
-                  <div className="text-3xl font-bold text-emerald-400">181+</div>
+                  <div className="text-3xl font-bold text-emerald-400">300+</div>
                   <div className="text-sm text-gray-400 mt-1">Problems Solved</div>
                 </div>
               </div>

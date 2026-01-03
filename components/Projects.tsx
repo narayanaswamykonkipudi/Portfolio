@@ -23,7 +23,7 @@ const projects = [
     gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
-    title: "Competitive Programming Suite",
+    title: "Weather app",
     description: "Collection of optimized solutions and algorithms for competitive programming challenges across CodeChef, LeetCode, and HackerRank.",
     tech: ["C++", "Java", "Python", "DSA"],
     icon: Trophy,

@@ -82,14 +82,18 @@ export function Contact() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div>
-                  <p className="text-sm text-gray-400 mb-1">Email</p>
-                  <a
-                    href="mailto:konkipudinarayanaswamy@gmail.com"
-                    className="text-emerald-400 hover:text-emerald-300 transition-colors"
-                  >
-                    konkipudinarayanaswamy@gmail.com
-                  </a>
-                </div>
+              <p className="text-sm text-gray-400 mb-1">Email</p>
+              <a
+              href="mailto:konkipudinarayanaswamy@gmail.com"
+              className="text-emerald-400 hover:text-emerald-300 transition-colors"
+              >
+               konkipudinarayanaswamy@gmail.com
+              </a>
+
+            </div>
+
+
+
                 <div>
                   <p className="text-sm text-gray-400 mb-1">Location</p>
                   <p className="text-gray-300">Tuni, Andhra Pradesh, India</p>
@@ -149,7 +153,7 @@ export function Contact() {
                     <Input
                       id="email"
                       type="email"
-                      placeholder="your.email@example.com"
+                      placeholder="your.email@gmail.com"
                       value={formData.email}
                       onChange={(e) =>
                         setFormData({ ...formData, email: e.target.value })

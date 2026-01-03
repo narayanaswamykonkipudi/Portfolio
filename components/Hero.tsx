@@ -42,7 +42,7 @@ function Counter({ end, duration = 2, suffix = "", decimals = 0 }: CounterProps)
 }
 
 const stats = [
-  { icon: Code, value: 181, label: "Coding Problems", suffix: "+" },
+  { icon: Code, value: 300, label: "Coding Problems", suffix: "+" },
   { icon: GraduationCap, value: 9.23, label: "CGPA", suffix: "/10", decimals: 2 },
   { icon: Trophy, value: 930, label: "CodeChef Rating", suffix: "+" },
 ];
@@ -89,7 +89,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.2 }}
             >
               <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 bg-clip-text text-transparent">
-                NARAYANA SWAMY K
+                NARAYANA SWAMY 
               </span>
             </motion.h1>
             <motion.p
