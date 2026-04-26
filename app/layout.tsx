@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://narayanaswamykonkipudi-portfolio.vercel.app",
+    url: "https://narayanaswamyk-portfolio.vercel.app/",
     title: "NARAYANA SWAMY K | Portfolio",
     description: "Aspiring software engineer and AI/ML practitioner",
   },
@@ -28,6 +28,8 @@ export const metadata: Metadata = {
   },
 };
 
+import { Cursor } from "@/components/Cursor";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -35,7 +37,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <Cursor />
+        {children}
+      </body>
     </html>
   );
 }

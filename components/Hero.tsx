@@ -23,7 +23,7 @@ function Counter({ end, duration = 2, suffix = "", decimals = 0 }: CounterProps)
     const animate = (currentTime: number) => {
       if (!startTime) startTime = currentTime;
       const progress = Math.min((currentTime - startTime) / (duration * 1000), 1);
-      
+
       const currentCount = progress * end;
       setCount(currentCount);
 
@@ -42,9 +42,9 @@ function Counter({ end, duration = 2, suffix = "", decimals = 0 }: CounterProps)
 }
 
 const stats = [
-  { icon: Code, value: 300, label: "Coding Problems", suffix: "+" },
-  { icon: GraduationCap, value: 9.23, label: "CGPA", suffix: "/10", decimals: 2 },
-  { icon: Trophy, value: 930, label: "CodeChef Rating", suffix: "+" },
+  { icon: Code, value: 1000, label: "Coding Problems", suffix: "+" },
+  { icon: GraduationCap, value: 9.05, label: "CGPA", suffix: "/10", decimals: 2 },
+  { icon: Trophy, value: 1000, label: "CodeChef Rating", suffix: "+" },
 ];
 
 export function Hero() {
@@ -88,17 +88,19 @@ export function Hero() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 bg-clip-text text-transparent">
-                NARAYANA SWAMY 
+              <span className="text-white">
+                NARAYANA SWAMY
               </span>
             </motion.h1>
             <motion.p
-              className="text-xl md:text-2xl text-gray-300 mt-4"
+              className="text-2xl md:text-4xl font-bold mt-6 tracking-wide"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Aspiring Software Engineer & AI/ML Practitioner
+              <span className="bg-gradient-to-r from-emerald-400 via-teal-300 to-emerald-500 bg-clip-text text-transparent">
+                Aspiring Python Developer
+              </span>
             </motion.p>
             <motion.p
               className="text-lg text-gray-400"

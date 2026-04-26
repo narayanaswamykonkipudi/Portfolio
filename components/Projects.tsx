@@ -3,40 +3,52 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Code2, Database, Globe, Trophy } from "lucide-react";
+import { ExternalLink, Github, Code2, Database, Globe, Trophy, CloudSun } from "lucide-react";
 
 const projects = [
   {
-    title: "LeetCode Practice Tracker",
-    description: "Comprehensive tracking system for 181+ coding problems across multiple platforms with progress analytics and performance metrics.",
-    tech: ["Python", "Data Analysis", "GitHub"],
+    title: "AI Study Assistant (RAG System)",
+    description:
+      "Built an end-to-end RAG pipeline using LangChain and FAISS for context-aware Q&A on PDFs. Integrated LLaMA 3.3 via Groq API to generate MCQs with answers and explanations, and automated daily quiz emails.",
+    tech: ["Python", "LangChain", "FAISS", "LLaMA 3", "Groq API", "HuggingFace", "Streamlit"],
     icon: Code2,
     color: "text-blue-400",
     gradient: "from-blue-500/20 to-cyan-500/20",
+    github: "https://github.com/narayanaswamykonkipudi/AI-Study-Assistant",
+    demo: "#",
   },
   {
-    title: "AI/ML Data Analysis Dashboard",
-    description: "Interactive dashboard for data analysis and visualization using Streamlit, NumPy, Pandas, and advanced ML techniques.",
-    tech: ["Python", "Streamlit", "NumPy", "Pandas", "ML"],
+    title: "AI Resume Screener (ATS Analyzer)",
+    description:
+      "Developed an NLP-based resume scoring system using TF-IDF and cosine similarity. Applied spaCy for keyword analysis and deployed with an interactive Plotly dashboard on Streamlit.",
+    tech: ["Python", "scikit-learn", "spaCy", "TF-IDF", "NLP", "Streamlit", "Plotly"],
     icon: Database,
     color: "text-purple-400",
     gradient: "from-purple-500/20 to-pink-500/20",
+    github: "https://github.com/narayanaswamykonkipudi",
+    demo: "#",
   },
   {
-    title: "Weather app",
-    description: "Collection of optimized solutions and algorithms for competitive programming challenges across CodeChef, LeetCode, and HackerRank.",
-    tech: ["C++", "Java", "Python", "DSA"],
-    icon: Trophy,
+    title: "Atmos Weather App",
+    description:
+      "Built a Flask-based weather app with real-time OpenWeatherMap API data, 24-hour & 5-day forecasts, SVG charts, unit conversion, and search history tracking.",
+    tech: ["Python", "Flask", "OpenWeatherMap API", "HTML", "CSS"],
+    icon: CloudSun,
     color: "text-yellow-400",
     gradient: "from-yellow-500/20 to-orange-500/20",
+    github: "https://github.com/narayanaswamykonkipudi/Weather-App",
+    demo: "#",
   },
   {
-    title: "Full-Stack Web Development Portfolio",
-    description: "Modern, responsive portfolio website showcasing projects, skills, and achievements with cutting-edge UI/UX design.",
+    title: "Full-Stack Portfolio Website",
+    description:
+      "Designed a modern portfolio website showcasing projects and skills with responsive UI and smooth animations.",
     tech: ["Next.js", "TypeScript", "TailwindCSS", "Framer Motion"],
     icon: Globe,
     color: "text-emerald-400",
     gradient: "from-emerald-500/20 to-teal-500/20",
+    github: "https://github.com/narayanaswamykonkipudi/Portfolio",
+    demo: "https://narayanaswamyk-portfolio.vercel.app/",
   },
 ];
 
@@ -93,14 +105,18 @@ export function Projects() {
                       ))}
                     </div>
                     <div className="flex space-x-3">
-                      <Button variant="outline" size="sm" className="flex-1">
-                        <Github className="w-4 h-4 mr-2" />
-                        Code
-                      </Button>
-                      <Button variant="outline" size="sm" className="flex-1">
-                        <ExternalLink className="w-4 h-4 mr-2" />
-                        Demo
-                      </Button>
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex-1">
+                        <Button variant="outline" size="sm" className="w-full">
+                          <Github className="w-4 h-4 mr-2" />
+                          Code
+                        </Button>
+                      </a>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex-1">
+                        <Button variant="outline" size="sm" className="w-full">
+                          <ExternalLink className="w-4 h-4 mr-2" />
+                          Demo
+                        </Button>
+                      </a>
                     </div>
                   </CardContent>
                 </Card>

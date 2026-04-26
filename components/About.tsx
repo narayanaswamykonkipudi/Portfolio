@@ -36,10 +36,10 @@ export function About() {
                     Objective
                   </h3>
                   <p className="text-gray-300 leading-relaxed text-lg">
-                    Aspiring software engineer and AI/ML practitioner pursuing B.Tech in 
-                    Artificial Intelligence and Machine Learning. Strong interest in competitive 
-                    programming and algorithmic problem-solving. Aiming to deepen data science/ML 
-                    expertise through real-world projects.
+                    Aspiring Python Developer pursuing B.Tech in
+                    Artificial Intelligence and Machine Learning. Strong interest in competitive
+                    programming and algorithmic problem-solving. Aiming to deepen Machine Learning and Deep Learning
+                    skills and showcase through real-world projects.
                   </p>
                   <div className="pt-4 space-y-2">
                     <p className="text-gray-300">

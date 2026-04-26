@@ -8,15 +8,15 @@ const achievements = [
   {
     icon: Code,
     title: "Coding Problems",
-    value: "300+",
-    description: "LeetCode, CodeChef, GFG, HackerRank",
+    value: "1000+",
+    description: "LeetCode, CodeChef, GeeksforGeeks",
     color: "text-blue-400",
     link: "https://codolio.com/profile/BuildWithNithin",
   },
   {
     icon: Trophy,
     title: "CodeChef Rating",
-    value: "930+",
+    value: "1000+",
     description: "Starters 204 Rank 14,488 (Sep 2025)",
     color: "text-yellow-400",
     link: "https://www.codechef.com/users/narayanaswamy3",
@@ -33,7 +33,7 @@ const achievements = [
     icon: Star,
     title: "HackerRank",
     value: "3-Star",
-    description: "C++, C, Python",
+    description: "Python,Java,C++",
     color: "text-emerald-400",
     link: "https://www.hackerrank.com/profile/konkipudinaraya1",
   },
@@ -62,11 +62,11 @@ export function Achievements() {
             const CardWrapper = achievement.link ? motion.a : motion.div;
             const wrapperProps = achievement.link
               ? {
-                  href: achievement.link,
-                  target: "_blank",
-                  rel: "noopener noreferrer",
-                  className: "block",
-                }
+                href: achievement.link,
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "block",
+              }
               : {};
             return (
               <motion.div
@@ -78,9 +78,8 @@ export function Achievements() {
               >
                 <CardWrapper {...wrapperProps}>
                   <Card
-                    className={`h-full text-center gradient-glow ${
-                      achievement.link ? "cursor-pointer hover:scale-105 transition-transform" : ""
-                    }`}
+                    className={`h-full text-center gradient-glow ${achievement.link ? "cursor-pointer hover:scale-105 transition-transform" : ""
+                      }`}
                   >
                     <CardContent className="pt-6">
                       <div className="flex flex-col items-center space-y-4">
@@ -118,12 +117,12 @@ export function Achievements() {
             <CardContent className="pt-6">
               <div className="flex items-center justify-center space-x-8 text-center">
                 <div>
-                  <div className="text-3xl font-bold text-emerald-400">60+</div>
+                  <div className="text-3xl font-bold text-emerald-400">100+</div>
                   <div className="text-sm text-gray-400 mt-1">Active Days</div>
                 </div>
                 <div className="w-px h-12 bg-white/20"></div>
                 <div>
-                  <div className="text-3xl font-bold text-emerald-400">300+</div>
+                  <div className="text-3xl font-bold text-emerald-400">1000+</div>
                   <div className="text-sm text-gray-400 mt-1">Problems Solved</div>
                 </div>
               </div>

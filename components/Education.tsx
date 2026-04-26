@@ -9,7 +9,7 @@ const education = [
     institution: "Aditya University – Surampalem",
     degree: "B.Tech AIML",
     period: "2024–2028",
-    cgpa: "9.23/10",
+    cgpa: "9.05/10",
     icon: GraduationCap,
   },
   {
